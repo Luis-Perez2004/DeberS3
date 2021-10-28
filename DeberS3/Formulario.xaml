@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberS3.Formulario">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="LightSteelBlue" Padding="30" CornerRadius="0">
+                <Label Text="Deber Semana 2 Registro de Notas" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20"/>
+            </Frame>
+            <Label x:Name="lbusuario" HorizontalTextAlignment="End"/>
+            <Grid Margin="5,5,5,5" BackgroundColor="Orange" RowSpacing="0.1" ColumnSpacing="5">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+
+                </Grid.RowDefinitions>
+
+                <Label Grid.ColumnSpan="2" Grid.Row="0" Text="PARCIAL 1"/>
+                <Label Grid.Column="2" Grid.Row="0" Text="PORCENTAJE %"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="NOTAS"/>
+                <Label Grid.Column="0" Grid.Row="1" Text="Nota de seguimiento"/>
+                <Entry x:Name="NS1" Grid.Column="1" Grid.Row="1" Keyboard="Numeric"/>
+                <Entry x:Name="ENS1" Grid.Column="2" Grid.Row="1" Placeholder="60%" IsReadOnly="True"/>
+                <Label Grid.Column="0" Grid.Row="2" Text="Nota de examen"/>
+                <Entry x:Name="EP1" Grid.Column="1" Grid.Row="2" Keyboard="Numeric"/>
+                <Entry x:Name="EEP1" Grid.Column="2" Grid.Row="2" Placeholder="40%" IsReadOnly="True"/>
+                <Label Grid.Column="0" Grid.Row="3" Text="Nota Parcial 1"/>
+                <Entry x:Name="NP1" Grid.Column="1" Grid.Row="3" IsReadOnly="True"/>
+                <Entry x:Name="ENP1" Grid.Column="2" Grid.Row="3" Placeholder="50% PARCIAL" IsReadOnly="True"/>
+
+                <Label Grid.ColumnSpan="2" Grid.Row="4" Text="PARCIAL 2"/>
+                <Label Grid.Column="2" Grid.Row="4" Text="PORCENTAJE %"/>
+                <Label Grid.Column="1" Grid.Row="4" Text="NOTAS"/>
+                <Label Grid.Column="0" Grid.Row="5" Text="Nota de seguimiento"/>
+                <Entry x:Name="NS2" Grid.Column="1" Grid.Row="5" Keyboard="Numeric"/>
+                <Entry x:Name="ENS2" Grid.Column="2" Grid.Row="5" Placeholder="60%" IsReadOnly="True"/>
+                <Label Grid.Column="0" Grid.Row="6" Text="Nota de examen"/>
+                <Entry x:Name="EP2" Grid.Column="1" Grid.Row="6" Keyboard="Numeric"/>
+                <Entry x:Name="EEP2" Grid.Column="2" Grid.Row="6" Placeholder="40%" IsReadOnly="True"/>
+                <Label Grid.Column="0" Grid.Row="7" Text="Nota Parcial 2"/>
+                <Entry x:Name="NP2" Grid.Column="1" Grid.Row="7" IsReadOnly="True"/>
+                <Entry x:Name="ENP2" Grid.Column="2" Grid.Row="7" Placeholder="50% PARCIAL" IsReadOnly="True"/>
+
+                <Label Grid.Column="0" Grid.Row="9" Text="NOTA FINAL"/>
+                <Entry x:Name="NF" Grid.Column="1" Grid.Row="9" Keyboard="Numeric" IsReadOnly="True"/>
+
+                <Label Grid.Column="0" Grid.Row="11" Text="ESTADO"/>
+                <Entry x:Name="ES" Grid.Column="1" Grid.Row="11" Keyboard="Text" IsReadOnly="True"/>
+
+            </Grid>
+            <Button x:Name="btnCalcular" Text="Calcular" BackgroundColor="LightGreen" Clicked="btnCalcular_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

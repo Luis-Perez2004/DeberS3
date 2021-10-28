@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberS3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="LightSteelBlue" Padding="24" CornerRadius="0">
+            <Label Text="Login" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20"/>
+        </Frame>
+
+        <Entry x:Name="txtUsuraio" Placeholder="Ingrese el usuario:"/>
+        <Entry x:Name="txtPassword" Placeholder="Ingrese la contraseña" IsPassword="True"/>
+
+        <Button x:Name="btnIngresar" Text="Ingresar" BackgroundColor="LightGreen" Clicked="btnIngresar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
